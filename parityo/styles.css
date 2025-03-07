@@ -83,13 +83,13 @@
 #main3 {
     grid-row: 2 / 6;
     grid-column: 1 / 3;
-    background: color #74b89a;
     padding: 20px;
 }
 
 #aside3 {
     grid-row: 2 / 6;
     grid-column: 3 / 6;
+    padding: 20px;
 }
 
 #section3 {
@@ -100,6 +100,7 @@
 #footer3 {
     grid-row: 7 / 9;
     grid-column: 1 / 6;
+    padding: 30px;
 }
 
 #logo {
