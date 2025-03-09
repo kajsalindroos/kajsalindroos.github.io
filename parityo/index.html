@@ -6,6 +6,7 @@
     <!--alt tekstit kuville-->
     <!--puuttuu h2-h6(kaikkia ei tarvitse käyttää HUOM! JÄRJESTYS)-->
     <!--taustaväri ei voi olla täysin valkoinen, muutetaan joka sivulle css tiedostoon-->
+    <!--CSS grid prosenteilla voi poistaa tyhjää tilaa-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Saima Kalliola, Kajsa Lindroos">
@@ -14,6 +15,8 @@
 </head>
 
 <body id="page1">
+    <!--navbar wont extend, why?-->
+
     <header id="header1">
         <a href="index.html">
             <img id="logo" src="./kuvat/senioripalvelut_logo.png" alt="Senioripalvelut logo">
@@ -24,16 +27,24 @@
         <a href="palvelut.html"> Palvelut</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
-    <!--h1 ja tekstiä-->
+    <!--UUSI RAKENNE EHDOTUS: main, section(IMAGE) ja toinen main <p> elementille-->
     <main id="main1">
         <h1> Liity seuraamme! </h1>
-        <P>Senioripalvelu on perustettu kannustamaan senioreita luomaan sosiaalisia suhteita, saamaan ainakin jokin mieluinen
+        <P>Senioripalvelu on perustettu kannustamaan senioreita luomaan sosiaalisia suhteita, saamaan ainakin jokin
+            mieluinen
             viikkoharrastus ja tuomaan iloa. Yritämmä toiminnallamme vähentää ikääntyneiden yksinäisyyttä
             Seinäjoella.
             Senioripalvelu on tarkoitettu Seinäjoen alueella asuville senioreille. Viriketoiminta on maksutonta, mutta
-            mahdolliset ruokailut ja taksimatkat ovat asiakkaille maksullisia. Voimme auttaa taksin varaamisessa
+            mahdolliset ruokailut ja taksimatkat ovat asiakkaille maksullisia. Autamme tarvittaessa taksin varaamisessa
             senioripalveluille ja sieltä takaisin kotiin. </P>
+    </main>
 
+    <!--Vaihdetaan kuva leveämpään, ja muutetaan aside sectioniksi(ei vain html:ssä mutta myös CSS)-->
+    <aside id="aside1">
+        <img id="testikuva" src="./kuvat/woman_hands.jpg" alt="ikäihmisen kädet sylissä">
+    </aside>
+
+    <main id="secondmain1">
         <h2> Viriketoiminta</h2>
 
         <p>Viriketoiminta on mukava lisä viikottaiseen elämään ja antaa senioreille mahdollisuuksia oppia uutta sekä
@@ -46,18 +57,13 @@
 
         </p>
 
-       
     </main>
-    <!--kuva-->
-    <aside id="aside1">
-        <img id="testikuva" src="./kuvat/woman_hands.jpg" alt="ikäihmisen kädet sylissä">
-    </aside>
     <!--button?-->
     <section id="section1">
         <h2>Ilmoittaudu mukaan tästä:</h2>
         <button> Liity</button>
     </section>
-
+<!--footer teksti liian vasemmalla + add margin between button, bad on mobile-->
     <footer id="footer1">© 2025 Senioripalvelut</footer>
 </body>
 
