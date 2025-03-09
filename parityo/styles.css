@@ -43,6 +43,13 @@ nav a {
     margin-left: 20%;
     color: #f7faf9;
 }
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-content: center;
+    background-color: #206e6a;
+
+}
 #page1 {
     display: grid;
     grid-template-rows: 10% 10% 15% 15% 10% 15% 15% 15%;
@@ -132,13 +139,7 @@ nav a {
     padding: 0%
 }
 
-#header3 {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    align-content: center;
-    background-color: #206e6a;
 
-}
 
 #main3 {
     grid-row: 2 / 6;
